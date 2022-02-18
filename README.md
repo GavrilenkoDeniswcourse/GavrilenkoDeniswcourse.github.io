@@ -1,2 +1,2 @@
-# GavrilenkoDeniswcours.github.io
+# Гавриленко Денис
 Мой первый сайт
