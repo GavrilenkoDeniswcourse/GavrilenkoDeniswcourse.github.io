@@ -1,0 +1,109 @@
+body{
+    font-family: Arial,sans-serif;    
+}
+nav{
+    width: 100%;
+    height: 60px;
+    background: #344051;
+    
+}
+.logo{
+    color: #ffffff;
+    font-size: 30px;
+    line-height: 60px;
+    padding-left: 388px;
+    float: left;
+    
+}
+.menu{
+    float: left;
+    padding-left: 432px;
+    
+    
+}
+.menu li{
+    float: left;
+    line-height: 60px;
+    color: #fff;
+    margin-right: 40px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.main{
+    width: 100%;
+    height: calc(100% - 60px);
+    background: url(../img/boy.png) 90% 100%/auto 85% no-repeat, url(../img/bd.png) center/cover no-repeat;
+    
+    
+}
+.titel__container{
+    float: left;
+    margin: 432px 0px 0px 404px;
+    color: #2c384a;
+    text-align: center;
+}
+.titel__container h1{
+    font-size: 60px;
+    font-weight:bold;
+}
+
+.titel__container h4{
+    margin-top: 40px;
+    font-size: 30px;
+    color: #79818d
+}
+.titel__container input{
+    height: 40px;
+    text-align: center;
+    border: 2px solid #6d7682;
+    background: none;
+    border-radius: 10px;
+    color: #6d7682;
+    font-size: 13px;
+    margin-top: 30px;
+    margin-right: 40px;
+    padding: 0px 16px;
+}
+.i{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 30px;
+    
+}
+.i h2{
+    font-size: 40px;
+    font-weight: 200px;
+    background: url(../img/Cherta.png) center no-repeat;
+    margin: 60px;
+}
+.i p{
+    font-size: 20px;
+    margin-top: 30px;
+    color: #525a68;
+}
+.i a{
+    height: 40px;
+    text-align: center;
+    border: 2px solid #7b7c88;
+    background: none;
+    border-radius: 10px;
+    color: #7b7c88;
+    font-size: 17px;
+    margin: 40px; 
+    padding: 0px 16px;
+}
+.what{
+        text-align: center;
+    font-size: 25px;
+    margin-top: 30px;
+     background:url(../img/Cherta.png) 50% 20%/0% 0% no-repeat, url(../img/fon%20two.png) center/cover no-repeat; 
+}
+.what h2{
+    font-size: 30px;
+    margin: 40px 0px 40px 0px;
+    
+}
+.naz{
+    
+
+}
