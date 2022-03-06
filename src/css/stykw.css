@@ -187,9 +187,13 @@ nav{
     margin: 40px;
     
 }
-.mp {
-    border-top: 3px solid #6d7682;
+.price p:hover{
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #6d7682;
 }
+
 .stats{
    width: 100%;
     height: 70%;

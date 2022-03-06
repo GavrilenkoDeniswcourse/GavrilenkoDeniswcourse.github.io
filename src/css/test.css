@@ -1,10 +1,61 @@
 body{
     font-family: Arial,sans-serif;    
 }
+.loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Добавить анимацию к "Содержимое страницы" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
 nav{
     width: 100%;
     height: 60px;
     background: #344051;
+    position: fixed;
     
 }
 .logo{
@@ -13,7 +64,14 @@ nav{
     line-height: 60px;
     padding-left: 388px;
     float: left;
+   -webkit-animation:comming 2s; 
+    -o-animation: comming 2s;
+    animation: comming 2s;
     
+}
+main{
+    width: 100%;
+    height: 100%;
 }
 .menu{
     float: left;
@@ -28,10 +86,14 @@ nav{
     margin-right: 40px;
     font-size: 18px;
     text-transform: uppercase;
+    -webkit-animation:tops 0.4s ease forwards; 
+    -o-animation: tops 0.4s ease forwards;
+    animation: tops 0.4s ease forwards;
+    opacity: 0;
 }
 .main{
     width: 100%;
-    height: calc(100% - 60px);
+    height: 100% ;
     background: url(../img/boy.png) 90% 100%/auto 85% no-repeat, url(../img/bd.png) center/cover no-repeat;
     
     
@@ -41,6 +103,14 @@ nav{
     margin: 432px 0px 0px 404px;
     color: #2c384a;
     text-align: center;
+    opacity: 0;
+     -webkit-animation:titlemove 1s ease forwards; 
+    -o-animation: titlemove 1s ease forwards;
+    animation: titlemove 1s ease forwards;
+    -webkit-animation-delay: 2s;
+    -o-animation-delay: 2s;
+    animation-delay: 2s;
+    
 }
 .titel__container h1{
     font-size: 60px;
@@ -64,6 +134,78 @@ nav{
     margin-right: 40px;
     padding: 0px 16px;
 }
+.menu li a{
+    transition: all 0.1s;
+    transform: scale(1);
+    display: inline-block;
+}
+.menu li a:visited{
+    color: white;
+    
+}
+.menu li a:hover{
+    color: #d17700;
+   
+    
+}
+.menu li a:active{
+     transform: scale(1.1);
+}
+.titel__container input{
+     transition: all 0.2s;
+    transform: scale(1);
+}
+.titel__container input:hover{
+    background:  #344051;
+    color: white;
+}
+.titel__container input:active{
+    transform: scale(1.1);
+    
+}
+@keyframes comming{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity:1;
+    }
+}
+@keyframes tops{
+    from{
+        opacity: 0;
+        margin-top: -80px;
+    }
+    to{
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+.menu li:nth-child(2){
+    animation-delay: 0.4s;
+}
+.menu li:nth-child(3){
+    animation-delay: 0.8s;
+}
+.menu li:nth-child(4){
+    animation-delay: 1.2s;
+}
+.menu li:nth-child(5){
+    animation-delay: 1.6s;
+}
+.menu li:nth-child(6){
+    animation-delay: 2s;
+}
+@keyframes titlemove{
+    from{
+        opacity: 0;
+        margin-left: -500px;
+    }
+    to{
+        opacity: 1;
+        margin-left: 404px;
+    }
+}
 .i{
     width: 100%;
     height: 70%;
@@ -84,17 +226,35 @@ nav{
     font-weight: 400;
     margin: 30px;
 }
-.i a{
+.i input{
     height: 40px;
     border: 2px solid #6d7682;
+    background: none;
     border-radius: 10px;
     font-size: 13px;
     padding: 0px 16px;
 }
+.i input{
+     transition: all 0.2s;
+    transform: scale(1);
+}
+.i input:hover{
+    background:  #344051;
+    color: white;
+}
+.i input:active{
+    transform: scale(1.1);
+    
+}
+
 .what{
    width: 100%;
     height: 70%;
     text-align: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
     background:  url(../img/fon%20two.png) center/cover no-repeat;
     
      
@@ -118,11 +278,16 @@ nav{
      margin: 30px;
      color: darkorange;
         }
+.what:nth-child(1){
+    background:  url(../img/fon%20two.png);
+}
+.what:nth-child(2){
+    background:  url(../img/fonthree.png);
+}
 .ceys{
     width: 100%;
     height: 1060px;
     text-align: center;
-     border: 2px solid #6d7682;
 
 }
 .ceys h2{
@@ -137,27 +302,52 @@ nav{
 }
 .ceys p{
     font-size: 15px;
-    padding: 15px;
-    text-align: center;
+    padding: 10px;
+    
     
 }
 .class{
-    float: left;
-   display: inline-block; 
-    margin-bottom:150px;   
-   
+    float:left;
+    padding-left: 330px;
+    text-align: left;
+    padding-right: 30px;
+    
 }
-.ceys a{
-    border: 2px solid #6d7682;
-    background: none;
-    border-radius: 10px;
+.ceys input{
+    border-radius: 5px;
+    margin-top: 30px;
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color:#63b5ae;
+    color: white;
+}
+.ceys input{
+     transition: all 0.2s;
+    transform: scale(1);
+}
+.ceys input:hover{
+    background:  #344051;
+    color: white;
+}
+.ceys input:active{
+    transform: scale(1.1);
+}
+
+.hz{
+    text-align: left;
+
+}
+.gl{
+    font-weight: bold;
+    font-size: 30px;
 }
 
 
 .prise{
     width: 100%;
-    height: 70%;
+    height: 80%;
     text-align: center;
+        
 }
 
 .price h2{
@@ -168,28 +358,49 @@ nav{
 }
 .price h3{
     font-size: 25px;
-    padding-left: 502px;
+    padding-left: 565px;
     margin: 30px; 
     text-transform: uppercase;
+    font-weight: bold;
 }
-.price from{
+.price select{
     font-size: 30px;
     border: 2px solid #6d7682;
-     text-align: center;
-    margin-left: 500px;
-    padding-left: 502px;
+    margin-left: 600px;
+    padding-right: 800px;
+    
 
 }
+
 .price p{
     font-size: 20px;
     text-align: start;
-    padding-left: 502px;
+    padding-left: 565px;
     margin: 40px;
+    font-weight: bold;
     
 }
-.mp {
-    border-top: 3px solid #6d7682;
+.price p::before{
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #6d7682;
+    
 }
+.price p::before{
+     display: block;
+    width: 805px;
+    height: 2px;
+    transform: scaleX(0);
+    background-color: #6d7682;
+    transition: all 0.3s;
+}
+.price p:hover::before{
+   transform: scaleX(1);
+}
+
+
 .stats{
    width: 100%;
     height: 70%;
@@ -227,23 +438,31 @@ nav{
 .otziv h2{
     font-size: 40px;
     font-weight: 200px;
-    margin: 30px;
+   
+    padding-top:150px;
 }
 .otziv p{
     font-size: 20px;
-    margin: 15px;
     color: #525a68;
+    padding: 10px;
 }
+
 .contakt{
     width: 100%;
     height: 100%;
     text-align: center;
-    background: url(../img/fonthree.png) center no-repeat;     
+    background: url(../img/fonthree.png) no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
 }
 .contakt h2{
     font-size: 30px;
      font-weight: bold;
-    padding-top: 90px;
+    padding-top: 150px;
+    color: white;
+}
+.contakt p{
+    color: white;
 }
 .nobe{
     display: inline-block; 
@@ -251,30 +470,57 @@ nav{
     margin-top: 30px;
     width: 200px;
 }
+.strong{
+     color: white;
+     font-size: 15px;
+     text-align: center; 
+     margin: 30px;
+}
 .contakt h3{
     font-size: 23px;
     padding: 25px;
+    color: white;
 }
-.contakt input{
+.cont input{
     height: 45px;
     width: 20%;
-    text-align: center;
-    border: 2px solid #6d7682;
+    border: 2px solid White;
     background: none;
-    color: #6d7682;
+    color: white;
     font-size: 13px;
     margin-top: 30px;
-    margin-right: 100px;
+    margin-right: 50px;
     
 }
 textarea{
-     height: 200px;
-    width: 600px;
-    text-align: center;
-    border: 2px solid #6d7682;
+    height: 100px;
+    width: 800px;
+    border: 2px solid white;
     background: none;
     color: #6d7682;
     font-size: 13px;
     margin-top: 30px;
-    margin-left: 594;
+}
+.cnopka input{
+    height: 40px;
+    text-align: center;
+    border: 2px solid white;
+    background: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 13px;
+    margin-top: 30px;
+    padding: 0px 25px;
+}
+.cnopka input{
+     transition: all 0.2s;
+    transform: scale(1);
+}
+.cnopka input:hover{
+    background:  white;
+    color: black;
+}
+.cnopka input:active{
+    transform: scale(1.1);
+    
 }
