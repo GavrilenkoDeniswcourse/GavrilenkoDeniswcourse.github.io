@@ -277,12 +277,12 @@ main{
      margin: 30px;
      color: darkorange;
         }
-.what:nth-child(1){
+/*.what:nth-child(1){
     background:  url(../img/fon%20two.png);
 }
 .what:nth-child(2){
     background:  url(../img/fonthree.png);
-}
+}*/
 .ceys{
     width: 100%;
     height: 1060px;

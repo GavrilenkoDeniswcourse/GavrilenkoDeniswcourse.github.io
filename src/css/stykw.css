@@ -5,45 +5,62 @@ nav{
     width: 100%;
     height: 60px;
     background: #344051;
+    position: fixed;
+    z-index: 10;
     
 }
 .logo{
     color: #ffffff;
-    font-size: 30px;
+    font-size: 25px;
     line-height: 60px;
-    padding-left: 388px;
     float: left;
+   -webkit-animation:comming 2s; 
+    -o-animation: comming 2s;
+    animation: comming 2s;
     
+}
+main{
+    width: 100%;
+    height: 100%;
 }
 .menu{
     float: left;
-    padding-left: 432px;
-    
-    
 }
 .menu li{
     float: left;
     line-height: 60px;
-    color: #fff;
+    color: #ffffff;
     margin-right: 40px;
-    font-size: 18px;
+    font-size: 14px;
     text-transform: uppercase;
+    -webkit-animation:tops 0.4s ease forwards; 
+    -o-animation: tops 0.4s ease forwards;
+    animation: tops 0.4s ease forwards;
+    opacity: 0;
 }
 .main{
     width: 100%;
-    height: calc(100% - 60px);
+    height: 100% ;
     background: url(../img/boy.png) 90% 100%/auto 85% no-repeat, url(../img/bd.png) center/cover no-repeat;
     
     
 }
 .titel__container{
     float: left;
-    margin: 432px 0px 0px 404px;
     color: #2c384a;
     text-align: center;
+    width: 100%;
+    opacity: 0;
+     -webkit-animation:titlemove 1s ease forwards; 
+    -o-animation: titlemove 1s ease forwards;
+    animation: titlemove 1s ease forwards;
+    -webkit-animation-delay: 2s;
+    -o-animation-delay: 2s;
+    animation-delay: 2s;
+    
 }
 .titel__container h1{
-    font-size: 60px;
+    font-size: 55px;
     font-weight:bold;
 }
 
@@ -64,221 +81,97 @@ nav{
     margin-right: 40px;
     padding: 0px 16px;
 }
-.i{
-    width: 100%;
-    height: 70%;
-    text-align: center;
+.menu li a{
+    transition: all 0.1s;
+    transform: scale(1);
+    display: inline-block;
 }
-.i h2{
-    font-size: 30px;
-    padding: 30px;
-    font-weight: bold;
+.menu li a:visited{
+    color: white;
     
 }
-.i img{
-    padding: 20px;
-    
-}
-.i p{
-    font-size: 20px;
-    font-weight: 400;
-    margin: 30px;
-}
-.i a{
-    height: 40px;
-    border: 2px solid #6d7682;
-    border-radius: 10px;
-    font-size: 13px;
-    padding: 0px 16px;
-}
-.what{
-   width: 100%;
-    height: 70%;
-    text-align: center;
-    background:  url(../img/fon%20two.png) center/cover no-repeat;
-    
-     
-}
-.what h2{
-    font-size: 30px;
-    padding: 30px;
-    font-weight: bold;
-    
-
-}
-.nav {
-	display: inline-block; 
-	margin-top: 150px;
-    padding: 50px;
-    width: 300px;
-        }
- 
- .string {
-     text-align: center; 
-     margin: 30px;
-     color: darkorange;
-        }
-.ceys{
-    width: 100%;
-    height: 1060px;
-    text-align: center;
-     border: 2px solid #6d7682;
-
-}
-.ceys h2{
-    font-size: 30px;
-    padding: 30px;
-    font-weight: bold;
-    text-align: center;
-}
-.cherta{
-    padding: 30px;
-    text-align: center;
-}
-.ceys p{
-    font-size: 15px;
-    padding: 15px;
-    text-align: center;
-    
-}
-.class{
-    float: left;
-   display: inline-block; 
-    margin-bottom:150px;   
+.menu li a:hover{
+    color: #d17700;
    
-}
-.ceys a{
-    border: 2px solid #6d7682;
-    background: none;
-    border-radius: 10px;
-}
-
-
-.prise{
-    width: 100%;
-    height: 70%;
-    text-align: center;
-}
-
-.price h2{
-    font-size: 30px;
-    font-weight: bold;
-    margin: 30px;
-     text-align: center;
-}
-.price h3{
-    font-size: 25px;
-    padding-left: 502px;
-    margin: 30px; 
-    text-transform: uppercase;
-}
-.price from{
-    font-size: 30px;
-    border: 2px solid #6d7682;
-     text-align: center;
-    margin-left: 500px;
-    padding-left: 502px;
-
-}
-.price p{
-    font-size: 20px;
-    text-align: start;
-    padding-left: 502px;
-    margin: 40px;
     
 }
-.price p:hover{
-    display: block;
-    width: 100%;
-    height: 2px;
-    background-color: #6d7682;
+.menu li a:active{
+     transform: scale(1.1);
 }
-
-.stats{
-   width: 100%;
-    height: 70%;
-    text-align: center;
-    background:  url(../img/fon%20two.png) center/cover no-repeat;
-    
-     
+.titel__container input{
+     transition: all 0.2s;
+    transform: scale(1);
 }
-.stats h2{
-    font-size: 30px;
-    padding: 30px;
-    font-weight: bold;
-    
-
+.titel__container input:hover{
+    background:  #344051;
+    color: white;
 }
-.nov {
-	display: inline-block; 
-	margin-top: 150px;
-    padding: 50px;
-    width: 300px;
-        }
- 
- .streng {
-     color: #323e4f;
-     font-size: 40px;
-     text-align: center; 
-     margin: 30px;
-        }
-.otziv{
-    width: 100%;
-    height: 60%;
-    text-align: center;
+.titel__container input:active{
+    transform: scale(1.1);
     
 }
-.otziv h2{
-    font-size: 40px;
-    font-weight: 200px;
-    margin: 30px;
+@keyframes comming{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity:1;
+    }
 }
-.otziv p{
-    font-size: 20px;
-    margin: 15px;
-    color: #525a68;
+@keyframes tops{
+    from{
+        opacity: 0;
+        margin-top: -80px;
+    }
+    to{
+        opacity: 1;
+        margin-top: 0px;
+    }
 }
-.contakt{
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    background: url(../img/fonthree.png) center no-repeat;     
+.menu li:nth-child(2){
+    animation-delay: 0.4s;
 }
-.contakt h2{
-    font-size: 30px;
-     font-weight: bold;
-    padding-top: 90px;
+.menu li:nth-child(3){
+    animation-delay: 0.8s;
 }
-.nobe{
-    display: inline-block; 
-	margin-top: 70px;
-    margin-top: 30px;
-    width: 200px;
+.menu li:nth-child(4){
+    animation-delay: 1.2s;
 }
-.contakt h3{
-    font-size: 23px;
-    padding: 25px;
+.menu li:nth-child(5){
+    animation-delay: 1.6s;
 }
-.contakt input{
-    height: 45px;
-    width: 20%;
-    text-align: center;
-    border: 2px solid #6d7682;
-    background: none;
-    color: #6d7682;
-    font-size: 13px;
-    margin-top: 30px;
-    margin-right: 100px;
-    
+.menu li:nth-child(6){
+    animation-delay: 2s;
 }
-textarea{
-     height: 200px;
-    width: 600px;
-    text-align: center;
-    border: 2px solid #6d7682;
-    background: none;
-    color: #6d7682;
-    font-size: 13px;
-    margin-top: 30px;
-    margin-left: 594;
+@keyframes titlemove{
+    from{
+        opacity: 0;
+        margin-left: -500px;
+    }
+    to{
+        opacity: 1;
+        margin-left: 0px;
+    }
+}
+@media (max-width:991px){
+    .titel__container, .titel__container h4, .titel__container input{
+        color: white;
+        position: relative;
+        z-index: 3;
+    }
+    .titel__container input{
+        border: 2px solid #fff;
+    }
+    .main{
+        position: relative;
+    }
+    .main::after{
+        content: "";
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        position: absolute;
+        background: rgba(0,0,0,0.4);
+    }
 }
