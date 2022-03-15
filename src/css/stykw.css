@@ -50,17 +50,17 @@ main{
     color: #2c384a;
     text-align: center;
     width: 100%;
-    opacity: 0;
+    /*opacity: 0;
      -webkit-animation:titlemove 1s ease forwards; 
     -o-animation: titlemove 1s ease forwards;
     animation: titlemove 1s ease forwards;
     -webkit-animation-delay: 2s;
     -o-animation-delay: 2s;
-    animation-delay: 2s;
+    animation-delay: 2s;*/
     
 }
 .titel__container h1{
-    font-size: 55px;
+    font-size: 60px;
     font-weight:bold;
 }
 
@@ -175,3 +175,228 @@ main{
         background: rgba(0,0,0,0.4);
     }
 }
+
+.white-btn:visited{
+    color: white;
+}
+.i{
+    width: 100%;
+    height: 70%;
+    text-align: center;
+}
+.i h2{
+    font-size: 30px;
+    padding: 30px 0px 5px 0px;
+    font-weight: bold;
+    
+}
+.i img{
+    padding: 10px;
+    
+}
+.p{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 30px;
+}
+.hi input{
+    height: 40px;
+    border: 2px solid #6d7682;
+    background: none;
+    border-radius: 10px;
+    font-size: 13px;
+    padding: 0px 16px;
+    text-align: center;
+}
+.hi input{
+     transition: all 0.2s;
+    transform: scale(1);
+}
+.hi input:hover{
+    background:  #344051;
+    color: white;
+}
+.hi input:active{
+    transform: scale(1.1);
+    
+}
+.what{
+   width: 100%;
+height: 60%;
+    text-align: center;
+    background:  url(../img/fon%20two.png) center/cover no-repeat;
+    
+     
+}
+.what h2{
+    font-size: 30px;
+    padding-top: 30px;
+    font-weight: bold;
+    
+
+}
+.nav {
+	display: inline-block; 
+	margin-top: 150px;
+    padding-bottom: 50px;
+    width: 300px;
+        }
+ 
+ .string {
+     text-align: center; 
+     color: darkorange;
+        }
+.ceys{
+    width: 100%;
+    height: 1060px;
+    text-align: center;
+
+}
+.ceys h2{
+    font-size: 30px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+.cherta{
+    padding: 10px;
+    text-align: center;
+}
+ .gl p{
+    font-weight: bold;
+    font-size: 40px;  
+}
+.ceys p{
+    font-size: 15px;
+    text-align: left; 
+}
+.class{
+    float:left;
+}
+.hz{
+    text-align: left;
+}
+
+.ceys input{
+    border-radius: 5px;
+    margin-top: 30px;
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color:#63b5ae;
+    color: white;
+    float:left;
+}
+.ceys input{
+     transition: all 0.2s;
+    transform: scale(1);
+}
+.ceys input:hover{
+    background:  #344051;
+    color: white;
+}
+.ceys input:active{
+    transform: scale(1.1);
+}
+.prise{
+    width: 980px;
+    height: 760px;
+    text-align: center;
+    border: 2px solid black;
+        
+}
+
+.price h2{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 30px;
+     text-align: center;
+}
+.price h3{
+    font-size: 25px;
+    margin: 20px; 
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.price select{
+    font-size: 35px;
+    padding-right: 890px;
+    background-color: #efefef;
+    
+
+}
+
+.price p{
+    font-size: 20px;
+    text-align: start;
+    margin: 40px;
+    font-weight: bold;
+    
+}
+.price p::before{
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #6d7682;
+    
+}
+.price p::before{
+     display: block;
+    width: 805px;
+    height: 2px;
+    transform: scaleX(0);
+    background-color: #6d7682;
+    transition: all 0.3s;
+}
+.price p:hover::before{
+   transform: scaleX(1);
+}
+.stats{
+   width: 100%;
+    height: 60%;
+    text-align: center;
+    background:  url(../img/fon%20two.png) center/cover no-repeat;
+    
+     
+}
+.stats h2{
+    font-size: 30px;
+    padding-top: 30px;
+    font-weight: bold;
+    
+
+}
+.nov {
+	display: inline-block; 
+	margin-top: 150px;
+    padding-bottom:50px;
+    width: 300px;
+        }
+ 
+ .streng {
+     color: #323e4f;
+     font-size: 40px;
+     text-align: center; 
+     margin: 30px;
+        }
+.otziv{
+    width: 100%;
+    height: 60%;
+    text-align: center;
+    
+}
+.otziv h2{
+    font-size: 40px;
+    font-weight: 200px;
+    padding-top:50px;
+}
+.otziv img{
+    padding: 10px;
+}
+.pp{
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
