@@ -200,6 +200,7 @@ main{
     margin-top: 30px;
 }
 .hi input{
+    display: block;
     height: 40px;
     border: 2px solid #6d7682;
     background: none;
@@ -207,6 +208,7 @@ main{
     font-size: 13px;
     padding: 0px 16px;
     text-align: center;
+    margin-bottom: 30px;
 }
 .hi input{
      transition: all 0.2s;
@@ -239,7 +241,8 @@ height: 60%;
 	display: inline-block; 
 	margin-top: 150px;
     padding-bottom: 50px;
-    width: 300px;
+    width: 150px;
+    
         }
  
  .string {
@@ -305,11 +308,20 @@ height: 60%;
     border: 2px solid black;
         
 }
+.box{
+    width: 980px;
+    height: 700px;
+    border: 0px solid black;
+    box-shadow: 0px 0px 13px 0px #000000;
+    margin-bottom: 30px;
+    padding-left: 
+}
 
 .price h2{
     font-size: 30px;
     font-weight: bold;
     margin-top: 30px;
+    padding-top: 15px;
      text-align: center;
 }
 .price h3{
@@ -322,6 +334,8 @@ height: 60%;
     font-size: 35px;
     padding-right: 890px;
     background-color: #efefef;
+    display: block;
+    margin:20px;
     
 
 }
@@ -331,6 +345,24 @@ height: 60%;
     text-align: start;
     margin: 40px;
     font-weight: bold;
+    padding-left: 60px;
+    
+}
+.cnopka1 input{
+    border-radius: 5px;
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color:#63b5ae;
+    color: white;
+    text-align: center;
+    display: block;
+}
+.cnopka1 input{
+     transition: all 0.2s;
+    transform: scale(1);
+}
+.cnopka1 input:active{
+    transform: scale(1.1);
     
 }
 .price p::before{
@@ -362,24 +394,31 @@ height: 60%;
 }
 .stats h2{
     font-size: 30px;
-    padding-top: 30px;
+    padding-top: 25px;
     font-weight: bold;
     
 
 }
+
 .nov {
 	display: inline-block; 
 	margin-top: 150px;
     padding-bottom:50px;
-    width: 300px;
+    width: 150px;
         }
  
  .streng {
      color: #323e4f;
      font-size: 40px;
      text-align: center; 
-     margin: 30px;
+     margin: 20px;
+     font-weight: bold;
         }
+.tet{
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
 .otziv{
     width: 100%;
     height: 60%;
@@ -399,4 +438,80 @@ height: 60%;
     padding: 10px;
     text-align: center;
 }
-
+.contakt{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: url(../img/fonthree.png) no-repeat;
+}
+.contakt h2{
+    font-size: 30px;
+     font-weight: bold;
+    padding-top: 50px;
+    color: white;
+}
+.contakt p{
+    color: white;
+}
+.nobe{
+    display: inline-block; 
+	margin-top: 70px;
+    margin-top: 30px;
+    width: 200px;
+}
+.strong{
+     color: white;
+     font-size: 15px;
+     text-align: center; 
+     margin: 30px;
+}
+.contakt h3{
+    font-size: 23px;
+    padding: 20px;
+    color: white;
+}
+.cont input{
+    height: 45px;
+    width: 375px;
+    border: 2px solid White;
+    background: none;
+    color: white;
+    font-size: 13px;
+    margin-top: 30px;
+    display: inline-block; 
+    float: left;
+    margin-right: 30px;
+    margin-left: 19px;
+}
+textarea{
+    height: 100px;
+    width: 800px;
+    border: 2px solid white;
+    background: none;
+    color: #6d7682;
+    font-size: 13px;
+    margin-top: 30px;
+}
+.cnopka input{
+    height: 40px;
+    text-align: center;
+    border: 2px solid white;
+    background: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 13px;
+    margin-top: 30px;
+    padding: 0px 25px;
+}
+.cnopka input{
+     transition: all 0.2s;
+    transform: scale(1);
+}
+.cnopka input:hover{
+    background:  white;
+    color: black;
+}
+.cnopka input:active{
+    transform: scale(1.1);
+    
+}
