@@ -224,23 +224,26 @@ main{
 }
 .what{
    width: 100%;
-height: 60%;
+height: 520px;
     text-align: center;
     background:  url(../img/fon%20two.png) center/cover no-repeat;
     
      
 }
+.row2{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 150px;
+    text-align: center;
+    
+}
 .what h2{
     font-size: 30px;
     padding-top: 30px;
     font-weight: bold;
-    
-
 }
 .nav {
 	display: inline-block; 
-	margin-top: 150px;
-    padding-bottom: 50px;
     width: 150px;
     
         }
@@ -255,38 +258,49 @@ height: 60%;
     text-align: center;
 
 }
+.row3{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
 .ceys h2{
     font-size: 30px;
     padding-top: 30px;
     padding-bottom: 10px;
     font-weight: bold;
     text-align: center;
+    
 }
 .cherta{
     padding: 10px;
     text-align: center;
 }
- .gl p{
-    font-weight: bold;
-    font-size: 40px;  
-}
+
 .ceys p{
     font-size: 15px;
-    text-align: left; 
+    text-align: left;
+    
 }
 .class{
     float:left;
 }
 .hz{
     text-align: left;
+
 }
+.gl{
+    font-weight: bold;
+    font-size: 30px;
+    
+}
+
 
 .ceys input{
     border-radius: 5px;
     margin-top: 30px;
     padding: 15px 30px;
     font-size: 20px;
-    background-color:#63b5ae;
+    background-color:#00d0c8;
     color: white;
     float:left;
 }
@@ -301,61 +315,68 @@ height: 60%;
 .ceys input:active{
     transform: scale(1.1);
 }
+
 .prise{
-    width: 980px;
-    height: 760px;
+    width: 100%;
     text-align: center;
     border: 2px solid black;
         
 }
-.box{
-    width: 980px;
-    height: 700px;
+.container{
+    text-align: center;
+    
+}
+.row1{
+    width: 75%;
+    height: 680px;
     border: 0px solid black;
     box-shadow: 0px 0px 13px 0px #000000;
     margin-bottom: 30px;
-    padding-left: 
+    text-align: center;
+    display: inline-flex;
+   
 }
 
-.price h2{
+.cont h2{
     font-size: 30px;
     font-weight: bold;
-    margin-top: 30px;
-    padding-top: 15px;
+
      text-align: center;
+}
+.kar{
+    width: 100px;
+    
 }
 .price h3{
     font-size: 25px;
-    margin: 20px; 
     text-transform: uppercase;
     font-weight: bold;
 }
 .price select{
     font-size: 35px;
-    padding-right: 890px;
+    padding-right: 900px;
     background-color: #efefef;
-    display: block;
-    margin:20px;
     
-
+    margin:20px;
 }
 
 .price p{
     font-size: 20px;
     text-align: start;
-    margin: 40px;
+    margin: 20px;
     font-weight: bold;
-    padding-left: 60px;
+    
     
 }
 .cnopka1 input{
+    margin-top: 20px;
     border-radius: 5px;
-    padding: 15px 30px;
+    padding: 10px 40px;
     font-size: 20px;
-    background-color:#63b5ae;
+    background-color:#00d0c8;
     color: white;
     text-align: center;
-    display: block;
+    
 }
 .cnopka1 input{
      transition: all 0.2s;
@@ -384,26 +405,35 @@ height: 60%;
 .price p:hover::before{
    transform: scaleX(1);
 }
+@media(max-width:768px){
+    .price select{
+        padding-right: 350px;
+        margin-left:0px;
+       
+    }
+}
 .stats{
    width: 100%;
-    height: 60%;
+    height: 520px;
     text-align: center;
-    background:  url(../img/fon%20two.png) center/cover no-repeat;
+    background:  url(../img/fon%20two.png) center/cover no-repeat;    
+}
+.rowz{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 150px;
+    text-align: center;
     
-     
 }
 .stats h2{
     font-size: 30px;
-    padding-top: 25px;
+    padding: 30px;
     font-weight: bold;
     
 
 }
-
 .nov {
 	display: inline-block; 
-	margin-top: 150px;
-    padding-bottom:50px;
     width: 150px;
         }
  
@@ -411,8 +441,7 @@ height: 60%;
      color: #323e4f;
      font-size: 40px;
      text-align: center; 
-     margin: 20px;
-     font-weight: bold;
+    
         }
 .tet{
     font-size: 13px;
@@ -444,6 +473,10 @@ height: 60%;
     text-align: center;
     background: url(../img/fonthree.png) no-repeat;
 }
+.row4{
+    display: flex;
+    justify-content: space-around;
+}
 .contakt h2{
     font-size: 30px;
      font-weight: bold;
@@ -455,15 +488,14 @@ height: 60%;
 }
 .nobe{
     display: inline-block; 
-	margin-top: 70px;
-    margin-top: 30px;
+	margin-top: 50px;
     width: 200px;
 }
 .strong{
      color: white;
      font-size: 15px;
      text-align: center; 
-     margin: 30px;
+    
 }
 .contakt h3{
     font-size: 23px;
@@ -481,7 +513,8 @@ height: 60%;
     display: inline-block; 
     float: left;
     margin-right: 30px;
-    margin-left: 19px;
+    
+   
 }
 textarea{
     height: 100px;
@@ -514,4 +547,18 @@ textarea{
 .cnopka input:active{
     transform: scale(1.1);
     
+}
+@media(min-width:1400px){
+    .cont input{
+        margin-left: 20px;
+    }
+}
+@media(max-width:768px){
+    textarea{
+        margin-left: 22px;
+        width: 400px;
+    }
+    .cont input{
+        width: 400px;
+    }
 }
