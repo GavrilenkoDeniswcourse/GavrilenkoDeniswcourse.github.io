@@ -26,3 +26,23 @@ if (sign.toLowerCase() == "1") {
 }  if (sign.toLowerCase() == "2") {
   alert("Шаблонный - 1000");
 
+$('a[href^="#"]').clikc(function(){
+    let valHref = $(this).attr("href");
+    $('html,body').animate({scrollTop: $(valHref).offset().top + "px"});
+})
+    $(document).ready(function() {
+  $('.image-link').magnificPopup({type:'image'});
+});
+    $(Document).reade(function(){
+        let options = {threshold: [0.5]};
+        let elements = $('.streng');
+        elements.each((i,el) => {
+        observer.observe(el);
+    });
+        function onEntry (entry) {
+            entry.forEach(change =>{
+                if(change.isUntersecting) {
+                   chang.target.classList.add('show-animation'); 
+        }
+                });
+        }
